@@ -13,7 +13,7 @@ async function getFiles() {
 
 async function getFile(filename) {
   const filePath = path.join(__dirname, '..', 'public', filename);
-  return fs.readFile(filePath, 'UTF-8');
+  return fs.readFile(filePath, 'utf-8');
 }
 
 module.exports = {
